@@ -1,0 +1,36 @@
+<<%= render 'shared/page_title',title: @chef.chefname %></h1>
+<div class = "row" >
+<div class = "col-mg-4 pull_right center">
+
+</p>
+<h5>Brought to by: <%= @recipe.chef.chefname %> </h5>
+<%= link_to @recipe.chef, chef_path(@recipe.chef)
+</p>
+</div>
+<div class = "col-mg-8 " >
+<% if log_in? and @recipe.chef = current_user %>
+<%= link_to "edit the recipes" ,edit_recipe_path(@recipe),class: "btn btn-success pull-right" %>
+<% end %>
+<h6><%= @recipe.summary %></h6>
+<div class = "show_recipe">
+<%= image_tag(@recipe.picture.url, class:  "gravatar") if @recipe.picture? %>
+</div>
+
+<div class = "col-mg-8 pull_right center" >
+<h6><%= @recipe.description %></h6><div class = "col-mg-8 pull_right center" >
+<div class ="pull-right">
+<%= link_to like_recipe_path(@recipe,like: true), method: :post do %>
+<i class = "glyphicon glyphicon-thumbs-up"></i>&nbsp <%= @recipe.thumbs_up_total %>
+<% end %>&nbsp&nbsp&nbsp&nbsp
+
+<%= link_to like_recipe_path(@recipe,like: false), method: :post do %>
+<i class = "glyphicon glyphicon-thumbs-down"></i>&nbsp <%= @recipe.thumbs_down_total %>
+<% end %>8130882013
+
+</div>
+</div>
+</div>
+<h5><%= link_to "return to the recipes", recipes_path ,class: "btn btn-warning btn-small" %></h5>
+
+
+

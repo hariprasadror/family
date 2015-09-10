@@ -1,0 +1,6 @@
+<%= render 'shared/page_title', title: "All recipes" %>
+<% @chef.each do |chef| %>
+<%= link_to  chef, chef_path(chef) %>
+<h5> Chef name: <%= chef.chefname %></h5>
+
+<% end %>

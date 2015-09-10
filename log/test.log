@@ -1,0 +1,3516 @@
+  [1m[36m (2.6ms)[0m  [1mDROP DATABASE IF EXISTS `family_test`[0m
+  [1m[35m (0.7ms)[0m  CREATE DATABASE `family_test` DEFAULT CHARACTER SET `utf8` COLLATE `utf8_unicode_ci`
+  [1m[36m (10.3ms)[0m  [1mCREATE TABLE `chefs` (`id` int(11) auto_increment PRIMARY KEY, `chefname` varchar(255), `email` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [1m[35m (6.5ms)[0m  CREATE TABLE `recipes` (`id` int(11) auto_increment PRIMARY KEY, `name` varchar(255), `summary` text, `description` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36m (4.8ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (160.3ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations`  ON `schema_migrations` (`version`) 
+  [1m[36m (0.7ms)[0m  [1mSELECT version FROM `schema_migrations`[0m
+  [1m[35m (3.7ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20150831104950')
+  [1m[36m (2.7ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20150831103535')[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+---------------------------------------
+RecipeTest: test_recipe_should_be_valid
+---------------------------------------
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+--------------------------------------
+RecipeTest: test_name_should_be_vaild_
+--------------------------------------
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (3.7ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (4.2ms)[0m  BEGIN
+--------------------------------------
+RecipeTest: test_name_should_be_vaild_
+--------------------------------------
+  [1m[36m (1.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+---------------------------------------
+RecipeTest: test_recipe_should_be_valid
+---------------------------------------
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+---------------------------------------
+RecipeTest: test_recipe_should_be_valid
+---------------------------------------
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+------------------------------------------
+RecipeTest: test_summary_should_be_present
+------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+---------------------------------------------------
+RecipeTest: test_description_should_not_be_too_long
+---------------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+----------------------------------------------------
+RecipeTest: test_description_should_not_be_too_short
+----------------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+-----------------------------------------------
+RecipeTest: test_name_should_be_not_be_too_long
+-----------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+------------------------------------------------
+RecipeTest: test_summary_should_not_be_too_short
+------------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+--------------------------------------
+RecipeTest: test_name_should_be_vaild_
+--------------------------------------
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+------------------------------------------------
+RecipeTest: test_summary_should_not_be_too_long_
+------------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+------------------------------------------------
+RecipeTest: test_name_should_be_not_be_too_short
+------------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+--------------------------------------
+RecipeTest: test_name_should_be_vaild_
+--------------------------------------
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+------------------------------------------
+RecipeTest: test_summary_should_be_present
+------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+------------------------------------------------
+RecipeTest: test_name_should_be_not_be_too_short
+------------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+-----------------------------------------------
+RecipeTest: test_name_should_be_not_be_too_long
+-----------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+------------------------------------------------
+RecipeTest: test_summary_should_not_be_too_long_
+------------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+---------------------------------------
+RecipeTest: test_recipe_should_be_valid
+---------------------------------------
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+------------------------------------------------
+RecipeTest: test_summary_should_not_be_too_short
+------------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+---------------------------------------------------
+RecipeTest: test_description_should_not_be_too_long
+---------------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+----------------------------------------------------
+RecipeTest: test_description_should_not_be_too_short
+----------------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+------------------------------------------------
+RecipeTest: test_summary_should_not_be_too_long_
+------------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+-----------------------------------------------
+RecipeTest: test_name_should_be_not_be_too_long
+-----------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+------------------------------------------------
+RecipeTest: test_name_should_be_not_be_too_short
+------------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+---------------------------------------------------
+RecipeTest: test_description_should_not_be_too_long
+---------------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+------------------------------------------
+RecipeTest: test_summary_should_be_present
+------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+----------------------------------------------------
+RecipeTest: test_description_should_not_be_too_short
+----------------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+--------------------------------------
+RecipeTest: test_name_should_be_vaild_
+--------------------------------------
+  [1m[36m (4.0ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+---------------------------------------
+RecipeTest: test_recipe_should_be_valid
+---------------------------------------
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+------------------------------------------------
+RecipeTest: test_summary_should_not_be_too_short
+------------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+---------------------------------------------------
+RecipeTest: test_description_should_not_be_too_long
+---------------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+------------------------------------------------
+RecipeTest: test_summary_should_not_be_too_long_
+------------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+------------------------------------------------
+RecipeTest: test_name_should_be_not_be_too_short
+------------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+----------------------------------------------------
+RecipeTest: test_description_should_not_be_too_short
+----------------------------------------------------
+  [1m[36m (7.6ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+---------------------------------------
+RecipeTest: test_recipe_should_be_valid
+---------------------------------------
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+------------------------------------------
+RecipeTest: test_summary_should_be_present
+------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+------------------------------------------------
+RecipeTest: test_summary_should_not_be_too_short
+------------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+--------------------------------------
+RecipeTest: test_name_should_be_vaild_
+--------------------------------------
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+-----------------------------------------------
+RecipeTest: test_name_should_be_not_be_too_long
+-----------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.9ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.9ms)[0m  BEGIN
+---------------------------------------------------
+RecipeTest: test_description_should_not_be_too_long
+---------------------------------------------------
+  [1m[36m (4.6ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+----------------------------------------------------
+RecipeTest: test_description_should_not_be_too_short
+----------------------------------------------------
+  [1m[36m (7.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+------------------------------------------------
+RecipeTest: test_name_should_be_not_be_too_short
+------------------------------------------------
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+------------------------------------------
+RecipeTest: test_summary_should_be_present
+------------------------------------------
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+------------------------------------------------
+RecipeTest: test_summary_should_not_be_too_long_
+------------------------------------------------
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+-----------------------------------------------
+RecipeTest: test_name_should_be_not_be_too_long
+-----------------------------------------------
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+---------------------------------------
+RecipeTest: test_recipe_should_be_valid
+---------------------------------------
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+--------------------------------------
+RecipeTest: test_name_should_be_vaild_
+--------------------------------------
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+------------------------------------------------
+RecipeTest: test_summary_should_not_be_too_short
+------------------------------------------------
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.5ms)[0m  BEGIN
+------------------------------------------------
+RecipeTest: test_summary_should_not_be_too_long_
+------------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+-----------------------------------------------
+RecipeTest: test_name_should_be_not_be_too_long
+-----------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+------------------------------------------------
+RecipeTest: test_summary_should_not_be_too_short
+------------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+---------------------------------------
+RecipeTest: test_recipe_should_be_valid
+---------------------------------------
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+------------------------------------------
+RecipeTest: test_summary_should_be_present
+------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+--------------------------------------
+RecipeTest: test_name_should_be_vaild_
+--------------------------------------
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+------------------------------------------------
+RecipeTest: test_name_should_be_not_be_too_short
+------------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+---------------------------------------------------
+RecipeTest: test_description_should_not_be_too_long
+---------------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+----------------------------------------------------
+RecipeTest: test_description_should_not_be_too_short
+----------------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+------------------------------------------------
+RecipeTest: test_summary_should_not_be_too_short
+------------------------------------------------
+  [1m[36m (2.0ms)[0m  [1mROLLBACK[0m
+  [1m[35m (3.1ms)[0m  BEGIN
+--------------------------------------
+RecipeTest: test_name_should_be_vaild_
+--------------------------------------
+  [1m[36m (4.7ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+---------------------------------------------------
+RecipeTest: test_description_should_not_be_too_long
+---------------------------------------------------
+  [1m[36m (4.6ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+----------------------------------------------------
+RecipeTest: test_description_should_not_be_too_short
+----------------------------------------------------
+  [1m[36m (4.7ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+------------------------------------------------
+RecipeTest: test_name_should_be_not_be_too_short
+------------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+------------------------------------------
+RecipeTest: test_summary_should_be_present
+------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (4.2ms)[0m  BEGIN
+------------------------------------------------
+RecipeTest: test_summary_should_not_be_too_long_
+------------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+---------------------------------------
+RecipeTest: test_recipe_should_be_valid
+---------------------------------------
+  [1m[36m (2.8ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+-----------------------------------------------
+RecipeTest: test_name_should_be_not_be_too_long
+-----------------------------------------------
+  [1m[36m (6.1ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+------------------------------------------
+RecipeTest: test_summary_should_be_present
+------------------------------------------
+  [1m[36m (5.7ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+------------------------------------------------
+RecipeTest: test_summary_should_not_be_too_long_
+------------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+------------------------------------------------
+RecipeTest: test_summary_should_not_be_too_short
+------------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+----------------------------------------------------
+RecipeTest: test_description_should_not_be_too_short
+----------------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+---------------------------------------------------
+RecipeTest: test_description_should_not_be_too_long
+---------------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+--------------------------------------
+RecipeTest: test_name_should_be_vaild_
+--------------------------------------
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+------------------------------------------------
+RecipeTest: test_name_should_be_not_be_too_short
+------------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+---------------------------------------
+RecipeTest: test_recipe_should_be_valid
+---------------------------------------
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+-----------------------------------------------
+RecipeTest: test_name_should_be_not_be_too_long
+-----------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (3.0ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.5ms)[0m  BEGIN
+------------------------------------------------
+RecipeTest: test_name_should_be_not_be_too_short
+------------------------------------------------
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+------------------------------------------------
+RecipeTest: test_summary_should_not_be_too_long_
+------------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+------------------------------------------------
+RecipeTest: test_summary_should_not_be_too_short
+------------------------------------------------
+  [1m[36m (2.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+------------------------------------------
+RecipeTest: test_summary_should_be_present
+------------------------------------------
+  [1m[36m (5.8ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+----------------------------------------------------
+RecipeTest: test_description_should_not_be_too_short
+----------------------------------------------------
+  [1m[36m (5.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+-----------------------------------------------
+RecipeTest: test_name_should_be_not_be_too_long
+-----------------------------------------------
+  [1m[36m (4.7ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+---------------------------------------------------
+RecipeTest: test_description_should_not_be_too_long
+---------------------------------------------------
+  [1m[36m (5.0ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+---------------------------------------
+RecipeTest: test_recipe_should_be_valid
+---------------------------------------
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+--------------------------------------
+RecipeTest: test_name_should_be_vaild_
+--------------------------------------
+  [1m[36m (11.2ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.5ms)[0m  BEGIN
+------------------------------------------------
+RecipeTest: test_name_should_be_not_be_too_short
+------------------------------------------------
+  [1m[36m (5.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+------------------------------------------------
+RecipeTest: test_summary_should_not_be_too_long_
+------------------------------------------------
+  [1m[36m (1.6ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+------------------------------------------------
+RecipeTest: test_summary_should_not_be_too_short
+------------------------------------------------
+  [1m[36m (5.7ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+--------------------------------------
+RecipeTest: test_name_should_be_vaild_
+--------------------------------------
+  [1m[36m (3.8ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+---------------------------------------------------
+RecipeTest: test_description_should_not_be_too_long
+---------------------------------------------------
+  [1m[36m (4.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+------------------------------------------
+RecipeTest: test_summary_should_be_present
+------------------------------------------
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+-----------------------------------------------
+RecipeTest: test_name_should_be_not_be_too_long
+-----------------------------------------------
+  [1m[36m (7.6ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+---------------------------------------
+RecipeTest: test_recipe_should_be_valid
+---------------------------------------
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+----------------------------------------------------
+RecipeTest: test_description_should_not_be_too_short
+----------------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+------------------------------------------
+RecipeTest: test_summary_should_be_present
+------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+---------------------------------------------------
+RecipeTest: test_description_should_not_be_too_long
+---------------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+---------------------------------------
+RecipeTest: test_recipe_should_be_valid
+---------------------------------------
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+------------------------------------------------
+RecipeTest: test_summary_should_not_be_too_long_
+------------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+-----------------------------------------------
+RecipeTest: test_name_should_be_not_be_too_long
+-----------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+--------------------------------------
+RecipeTest: test_name_should_be_vaild_
+--------------------------------------
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+------------------------------------------------
+RecipeTest: test_summary_should_not_be_too_short
+------------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+----------------------------------------------------
+RecipeTest: test_description_should_not_be_too_short
+----------------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+------------------------------------------------
+RecipeTest: test_name_should_be_not_be_too_short
+------------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+------------------------------------------------
+RecipeTest: test_summary_should_not_be_too_short
+------------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+------------------------------------------------
+RecipeTest: test_name_should_be_not_be_too_short
+------------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+----------------------------------------------------
+RecipeTest: test_description_should_not_be_too_short
+----------------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+--------------------------------------
+RecipeTest: test_name_should_be_vaild_
+--------------------------------------
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+-----------------------------------------------
+RecipeTest: test_name_should_be_not_be_too_long
+-----------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+------------------------------------------
+RecipeTest: test_summary_should_be_present
+------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+---------------------------------------------------
+RecipeTest: test_description_should_not_be_too_long
+---------------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+------------------------------------------------
+RecipeTest: test_summary_should_not_be_too_long_
+------------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+---------------------------------------
+RecipeTest: test_recipe_should_be_valid
+---------------------------------------
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+---------------------------------------------------
+RecipeTest: test_description_should_not_be_too_long
+---------------------------------------------------
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+------------------------------------------
+RecipeTest: test_summary_should_be_present
+------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+------------------------------------------------
+RecipeTest: test_name_should_be_not_be_too_short
+------------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+------------------------------------------------
+RecipeTest: test_summary_should_not_be_too_long_
+------------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+----------------------------------------------------
+RecipeTest: test_description_should_not_be_too_short
+----------------------------------------------------
+  [1m[36m (0.9ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+--------------------------------------
+RecipeTest: test_name_should_be_vaild_
+--------------------------------------
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+---------------------------------------
+RecipeTest: test_recipe_should_be_valid
+---------------------------------------
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+------------------------------------------------
+RecipeTest: test_summary_should_not_be_too_short
+------------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+-----------------------------------------------
+RecipeTest: test_name_should_be_not_be_too_long
+-----------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+---------------------------------------
+RecipeTest: test_recipe_should_be_valid
+---------------------------------------
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+----------------------------------------------------
+RecipeTest: test_description_should_not_be_too_short
+----------------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+-----------------------------------------------
+RecipeTest: test_name_should_be_not_be_too_long
+-----------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+---------------------------------------------------
+RecipeTest: test_description_should_not_be_too_long
+---------------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+------------------------------------------------
+RecipeTest: test_summary_should_not_be_too_long_
+------------------------------------------------
+  [1m[36m (1.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+--------------------------------------
+RecipeTest: test_name_should_be_vaild_
+--------------------------------------
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+------------------------------------------------
+RecipeTest: test_summary_should_not_be_too_short
+------------------------------------------------
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+------------------------------------------------
+RecipeTest: test_name_should_be_not_be_too_short
+------------------------------------------------
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+------------------------------------------
+RecipeTest: test_summary_should_be_present
+------------------------------------------
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+-------------------------------------
+ChefTest: test__chef_should_be_valid_
+-------------------------------------
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+--------------------------------------------------
+ChefTest: test_chef_should_name_should_be_presence
+--------------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+------------------------------------------------
+RecipeTest: test_name_should_be_not_be_too_short
+------------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+------------------------------------------------
+RecipeTest: test_summary_should_not_be_too_long_
+------------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+----------------------------------------------------
+RecipeTest: test_description_should_not_be_too_short
+----------------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+---------------------------------------------------
+RecipeTest: test_description_should_not_be_too_long
+---------------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+---------------------------------------
+RecipeTest: test_recipe_should_be_valid
+---------------------------------------
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+--------------------------------------
+RecipeTest: test_name_should_be_vaild_
+--------------------------------------
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+------------------------------------------------
+RecipeTest: test_summary_should_not_be_too_short
+------------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+-----------------------------------------------
+RecipeTest: test_name_should_be_not_be_too_long
+-----------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+------------------------------------------
+RecipeTest: test_summary_should_be_present
+------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+-------------------------------------
+ChefTest: test__chef_should_be_valid_
+-------------------------------------
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+--------------------------------------------------
+ChefTest: test_chef_should_name_should_be_presence
+--------------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+------------------------------------------
+ChefTest: test_chef_should_not_be_too_long
+------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+-------------------------------------------
+ChefTest: test_chef_should_not_be_too_short
+-------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+------------------------------------------------
+RecipeTest: test_summary_should_not_be_too_short
+------------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+------------------------------------------------
+RecipeTest: test_summary_should_not_be_too_long_
+------------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+--------------------------------------
+RecipeTest: test_name_should_be_vaild_
+--------------------------------------
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+------------------------------------------------
+RecipeTest: test_name_should_be_not_be_too_short
+------------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+---------------------------------------------------
+RecipeTest: test_description_should_not_be_too_long
+---------------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+------------------------------------------
+RecipeTest: test_summary_should_be_present
+------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+----------------------------------------------------
+RecipeTest: test_description_should_not_be_too_short
+----------------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+-----------------------------------------------
+RecipeTest: test_name_should_be_not_be_too_long
+-----------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+---------------------------------------
+RecipeTest: test_recipe_should_be_valid
+---------------------------------------
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+-------------------------------------------
+ChefTest: test_chef_should_not_be_too_short
+-------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+------------------------------------------
+ChefTest: test_chef_should_not_be_too_long
+------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+--------------------------------------------------
+ChefTest: test_chef_should_name_should_be_presence
+--------------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+-------------------------------------
+ChefTest: test__chef_should_be_valid_
+-------------------------------------
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+-------------------------------------
+ChefTest: test__chef_should_be_valid_
+-------------------------------------
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+--------------------------------------------------
+ChefTest: test_chef_should_name_should_be_presence
+--------------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+------------------------------------------
+ChefTest: test_chef_should_not_be_too_long
+------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+-------------------------------------------------
+ChefTest: test_email_should_be_with_in_the_bounds
+-------------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+--------------------------------------
+ChefTest: test_email_should_be_present
+--------------------------------------
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+-------------------------------------------
+ChefTest: test_chef_should_not_be_too_short
+-------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+---------------------------------------------------
+RecipeTest: test_description_should_not_be_too_long
+---------------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+----------------------------------------------------
+RecipeTest: test_description_should_not_be_too_short
+----------------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+-----------------------------------------------
+RecipeTest: test_name_should_be_not_be_too_long
+-----------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+------------------------------------------------
+RecipeTest: test_summary_should_not_be_too_long_
+------------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+------------------------------------------------
+RecipeTest: test_summary_should_not_be_too_short
+------------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+------------------------------------------------
+RecipeTest: test_name_should_be_not_be_too_short
+------------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+--------------------------------------
+RecipeTest: test_name_should_be_vaild_
+--------------------------------------
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+------------------------------------------
+RecipeTest: test_summary_should_be_present
+------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+---------------------------------------
+RecipeTest: test_recipe_should_be_valid
+---------------------------------------
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+--------------------------------------------------
+ChefTest: test_chef_should_name_should_be_presence
+--------------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+--------------------------------------
+ChefTest: test_email_should_be_present
+--------------------------------------
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+-------------------------------------------
+ChefTest: test_chef_should_not_be_too_short
+-------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+------------------------------------------
+ChefTest: test_chef_should_not_be_too_long
+------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+-------------------------------------
+ChefTest: test__chef_should_be_valid_
+-------------------------------------
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+-------------------------------------------------
+ChefTest: test_email_should_be_with_in_the_bounds
+-------------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+------------------------------------------
+RecipeTest: test_summary_should_be_present
+------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+----------------------------------------------------
+RecipeTest: test_description_should_not_be_too_short
+----------------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+-----------------------------------------------
+RecipeTest: test_name_should_be_not_be_too_long
+-----------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+--------------------------------------
+RecipeTest: test_name_should_be_vaild_
+--------------------------------------
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+---------------------------------------------------
+RecipeTest: test_description_should_not_be_too_long
+---------------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+------------------------------------------------
+RecipeTest: test_summary_should_not_be_too_long_
+------------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+---------------------------------------
+RecipeTest: test_recipe_should_be_valid
+---------------------------------------
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+------------------------------------------------
+RecipeTest: test_name_should_be_not_be_too_short
+------------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+------------------------------------------------
+RecipeTest: test_summary_should_not_be_too_short
+------------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+-----------------------------------------------
+RecipeTest: test_name_should_be_not_be_too_long
+-----------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+------------------------------------------------
+RecipeTest: test_summary_should_not_be_too_short
+------------------------------------------------
+  [1m[36m (5.5ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+------------------------------------------
+RecipeTest: test_summary_should_be_present
+------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+------------------------------------------------
+RecipeTest: test_name_should_be_not_be_too_short
+------------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+--------------------------------------
+RecipeTest: test_name_should_be_vaild_
+--------------------------------------
+  [1m[36m (4.5ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+---------------------------------------------------
+RecipeTest: test_description_should_not_be_too_long
+---------------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+----------------------------------------------------
+RecipeTest: test_description_should_not_be_too_short
+----------------------------------------------------
+  [1m[36m (8.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+------------------------------------------------
+RecipeTest: test_summary_should_not_be_too_long_
+------------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+---------------------------------------
+RecipeTest: test_recipe_should_be_valid
+---------------------------------------
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+-------------------------------------
+ChefTest: test__chef_should_be_valid_
+-------------------------------------
+  [1m[36m (2.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+-------------------------------------------
+ChefTest: test_chef_should_not_be_too_short
+-------------------------------------------
+  [1m[36m (6.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+-------------------------------------------------
+ChefTest: test_email_should_be_with_in_the_bounds
+-------------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+--------------------------------------
+ChefTest: test_email_should_be_present
+--------------------------------------
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+--------------------------------------------------
+ChefTest: test_chef_should_name_should_be_presence
+--------------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+------------------------------------------
+ChefTest: test_chef_should_not_be_too_long
+------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+--------------------------------------
+ChefTest: test_email_should_be_present
+--------------------------------------
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+--------------------------------------------------
+ChefTest: test_chef_should_name_should_be_presence
+--------------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+-------------------------------------------
+ChefTest: test_chef_should_not_be_too_short
+-------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+-------------------------------------
+ChefTest: test__chef_should_be_valid_
+-------------------------------------
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+------------------------------------------
+ChefTest: test_chef_should_not_be_too_long
+------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+-------------------------------------
+ChefTest: test_email_should_be_unique
+-------------------------------------
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (6.1ms)[0m  INSERT INTO `chefs` (`email`, `chefname`, `created_at`, `updated_at`) VALUES ('velpulahari@gmail.com', 'hari', '2015-09-01 04:34:05.543387', '2015-09-01 04:34:05.543387')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.8ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+-------------------------------------------------
+ChefTest: test_email_should_be_with_in_the_bounds
+-------------------------------------------------
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+---------------------------------------------------
+RecipeTest: test_description_should_not_be_too_long
+---------------------------------------------------
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+------------------------------------------------
+RecipeTest: test_summary_should_not_be_too_short
+------------------------------------------------
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+----------------------------------------------------
+RecipeTest: test_description_should_not_be_too_short
+----------------------------------------------------
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+------------------------------------------
+RecipeTest: test_summary_should_be_present
+------------------------------------------
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+--------------------------------------
+RecipeTest: test_name_should_be_vaild_
+--------------------------------------
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+---------------------------------------
+RecipeTest: test_recipe_should_be_valid
+---------------------------------------
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+------------------------------------------------
+RecipeTest: test_summary_should_not_be_too_long_
+------------------------------------------------
+  [1m[35m (2.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+------------------------------------------------
+RecipeTest: test_name_should_be_not_be_too_short
+------------------------------------------------
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+-----------------------------------------------
+RecipeTest: test_name_should_be_not_be_too_long
+-----------------------------------------------
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+-------------------------------------
+ChefTest: test__chef_should_be_valid_
+-------------------------------------
+  [1m[36mChef Exists (0.9ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'velpulahari@gmail.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+------------------------------------------
+ChefTest: test_chef_should_not_be_too_long
+------------------------------------------
+  [1m[35mChef Exists (0.1ms)[0m  SELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'velpulahari@gmail.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+--------------------------------------------------
+ChefTest: test_chef_should_name_should_be_presence
+--------------------------------------------------
+  [1m[36mChef Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'velpulahari@gmail.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+-------------------------------------------------
+ChefTest: test_email_should_be_with_in_the_bounds
+-------------------------------------------------
+  [1m[35mChef Exists (0.2ms)[0m  SELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa@example.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+--------------------------------------
+ChefTest: test_email_should_be_present
+--------------------------------------
+  [1m[36mChef Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = '' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+-------------------------------------------
+ChefTest: test_chef_should_not_be_too_short
+-------------------------------------------
+  [1m[35mChef Exists (0.1ms)[0m  SELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'velpulahari@gmail.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+-------------------------------------
+ChefTest: test_email_should_be_unique
+-------------------------------------
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mChef Exists (0.1ms)[0m  SELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'velpulahari@gmail.com' LIMIT 1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO `chefs` (`email`, `chefname`, `created_at`, `updated_at`) VALUES ('velpulahari@gmail.com', 'hari', '2015-09-01 04:37:37.377648', '2015-09-01 04:37:37.377648')[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mChef Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'VELPULAHARI@GMAIL.COM' LIMIT 1[0m
+  [1m[35m (4.5ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+------------------------------------------------
+RecipeTest: test_summary_should_not_be_too_short
+------------------------------------------------
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+------------------------------------------
+RecipeTest: test_summary_should_be_present
+------------------------------------------
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+---------------------------------------
+RecipeTest: test_recipe_should_be_valid
+---------------------------------------
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+--------------------------------------
+RecipeTest: test_name_should_be_vaild_
+--------------------------------------
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+---------------------------------------------------
+RecipeTest: test_description_should_not_be_too_long
+---------------------------------------------------
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+------------------------------------------------
+RecipeTest: test_summary_should_not_be_too_long_
+------------------------------------------------
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+----------------------------------------------------
+RecipeTest: test_description_should_not_be_too_short
+----------------------------------------------------
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+------------------------------------------------
+RecipeTest: test_name_should_be_not_be_too_short
+------------------------------------------------
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+-----------------------------------------------
+RecipeTest: test_name_should_be_not_be_too_long
+-----------------------------------------------
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+------------------------------------------------
+RecipeTest: test_summary_should_not_be_too_short
+------------------------------------------------
+  [1m[36m (1.7ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+------------------------------------------
+RecipeTest: test_summary_should_be_present
+------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+--------------------------------------
+RecipeTest: test_name_should_be_vaild_
+--------------------------------------
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+---------------------------------------
+RecipeTest: test_recipe_should_be_valid
+---------------------------------------
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+------------------------------------------------
+RecipeTest: test_name_should_be_not_be_too_short
+------------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+----------------------------------------------------
+RecipeTest: test_description_should_not_be_too_short
+----------------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+------------------------------------------------
+RecipeTest: test_summary_should_not_be_too_long_
+------------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+-----------------------------------------------
+RecipeTest: test_name_should_be_not_be_too_long
+-----------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+---------------------------------------------------
+RecipeTest: test_description_should_not_be_too_long
+---------------------------------------------------
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+-----------------------------------------------------------
+ChefTest: test_email_validation_shoul_reject_invalid_adress
+-----------------------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+--------------------------------------------------
+ChefTest: test_chef_should_name_should_be_presence
+--------------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+------------------------------------------
+ChefTest: test_chef_should_not_be_too_long
+------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+-------------------------------------
+ChefTest: test_email_should_be_unique
+-------------------------------------
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+--------------------------------------
+ChefTest: test_email_should_be_present
+--------------------------------------
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+---------------------------------------------------
+ChefTest: test_email_validation_accept_valid_adress
+---------------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+-------------------------------------------
+ChefTest: test_chef_should_not_be_too_short
+-------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+-------------------------------------
+ChefTest: test__chef_should_be_valid_
+-------------------------------------
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+-------------------------------------------------
+ChefTest: test_email_should_be_with_in_the_bounds
+-------------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+-------------------------------------
+ChefTest: test_email_should_be_unique
+-------------------------------------
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+-------------------------------------------
+ChefTest: test_chef_should_not_be_too_short
+-------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+--------------------------------------------------
+ChefTest: test_chef_should_name_should_be_presence
+--------------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+-------------------------------------
+ChefTest: test__chef_should_be_valid_
+-------------------------------------
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+-------------------------------------------------
+ChefTest: test_email_should_be_with_in_the_bounds
+-------------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+------------------------------------------
+ChefTest: test_chef_should_not_be_too_long
+------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+---------------------------------------------------
+ChefTest: test_email_validation_accept_valid_adress
+---------------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+--------------------------------------
+ChefTest: test_email_should_be_present
+--------------------------------------
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+-----------------------------------------------------------
+ChefTest: test_email_validation_shoul_reject_invalid_adress
+-----------------------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+------------------------------------------------
+RecipeTest: test_summary_should_not_be_too_short
+------------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+------------------------------------------
+RecipeTest: test_summary_should_be_present
+------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+------------------------------------------------
+RecipeTest: test_summary_should_not_be_too_long_
+------------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+----------------------------------------------------
+RecipeTest: test_description_should_not_be_too_short
+----------------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+---------------------------------------
+RecipeTest: test_recipe_should_be_valid
+---------------------------------------
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+------------------------------------------------
+RecipeTest: test_name_should_be_not_be_too_short
+------------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+---------------------------------------------------
+RecipeTest: test_description_should_not_be_too_long
+---------------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+-----------------------------------------------
+RecipeTest: test_name_should_be_not_be_too_long
+-----------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+--------------------------------------
+RecipeTest: test_name_should_be_vaild_
+--------------------------------------
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+------------------------------------------
+ChefTest: test_chef_should_not_be_too_long
+------------------------------------------
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+-------------------------------------------------
+ChefTest: test_email_should_be_with_in_the_bounds
+-------------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+-------------------------------------------
+ChefTest: test_chef_should_not_be_too_short
+-------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+-----------------------------------------------------------
+ChefTest: test_email_validation_shoul_reject_invalid_adress
+-----------------------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+-------------------------------------
+ChefTest: test_email_should_be_unique
+-------------------------------------
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+--------------------------------------
+ChefTest: test_email_should_be_present
+--------------------------------------
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+-------------------------------------
+ChefTest: test__chef_should_be_valid_
+-------------------------------------
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+---------------------------------------------------
+ChefTest: test_email_validation_accept_valid_adress
+---------------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+--------------------------------------------------
+ChefTest: test_chef_should_name_should_be_presence
+--------------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+------------------------------------------------
+RecipeTest: test_summary_should_not_be_too_short
+------------------------------------------------
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+------------------------------------------------
+RecipeTest: test_name_should_be_not_be_too_short
+------------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+------------------------------------------
+RecipeTest: test_summary_should_be_present
+------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+------------------------------------------------
+RecipeTest: test_summary_should_not_be_too_long_
+------------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+---------------------------------------
+RecipeTest: test_recipe_should_be_valid
+---------------------------------------
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+--------------------------------------
+RecipeTest: test_name_should_be_vaild_
+--------------------------------------
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+-----------------------------------------------
+RecipeTest: test_name_should_be_not_be_too_long
+-----------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+---------------------------------------------------
+RecipeTest: test_description_should_not_be_too_long
+---------------------------------------------------
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+----------------------------------------------------
+RecipeTest: test_description_should_not_be_too_short
+----------------------------------------------------
+  [1m[36m (4.0ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+---------------------------------------------------
+RecipeTest: test_description_should_not_be_too_long
+---------------------------------------------------
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+------------------------------------------------
+RecipeTest: test_name_should_be_not_be_too_short
+------------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+------------------------------------------------
+RecipeTest: test_summary_should_not_be_too_short
+------------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+------------------------------------------
+RecipeTest: test_summary_should_be_present
+------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+---------------------------------------
+RecipeTest: test_recipe_should_be_valid
+---------------------------------------
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+-----------------------------------------------
+RecipeTest: test_name_should_be_not_be_too_long
+-----------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+----------------------------------------------------
+RecipeTest: test_description_should_not_be_too_short
+----------------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+------------------------------------------------
+RecipeTest: test_summary_should_not_be_too_long_
+------------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+--------------------------------------
+RecipeTest: test_name_should_be_vaild_
+--------------------------------------
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+---------------------------------------------------
+ChefTest: test_email_validation_accept_valid_adress
+---------------------------------------------------
+  [1m[36mChef Exists (2.0ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'user@eee.com' LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+-----------------------------------------------------------
+ChefTest: test_email_validation_shoul_reject_invalid_adress
+-----------------------------------------------------------
+  [1m[35mChef Exists (0.4ms)[0m  SELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'user@example,com' LIMIT 1
+  [1m[36mChef Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'user_at_email.org' LIMIT 1[0m
+  [1m[35mChef Exists (0.3ms)[0m  SELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'user@name.' LIMIT 1
+  [1m[36mChef Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'eee@i_am.comss' LIMIT 1[0m
+  [1m[35mChef Exists (0.3ms)[0m  SELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'foo@eee+aar.com' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+------------------------------------------
+ChefTest: test_chef_should_not_be_too_long
+------------------------------------------
+  [1m[36mChef Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'velpulahari@gmail.com' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+-------------------------------------
+ChefTest: test_email_should_be_unique
+-------------------------------------
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mChef Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'velpulahari@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (1.7ms)[0m  INSERT INTO `chefs` (`chefname`, `email`, `created_at`, `updated_at`) VALUES ('hari', 'velpulahari@gmail.com', '2015-09-01 07:50:29.154306', '2015-09-01 07:50:29.154306')
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mChef Exists (0.5ms)[0m  SELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'VELPULAHARI@GMAIL.COM' LIMIT 1
+  [1m[36m (4.9ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+-------------------------------------------
+ChefTest: test_chef_should_not_be_too_short
+-------------------------------------------
+  [1m[36mChef Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'velpulahari@gmail.com' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+-------------------------------------
+ChefTest: test__chef_should_be_valid_
+-------------------------------------
+  [1m[35mChef Exists (0.2ms)[0m  SELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'velpulahari@gmail.com' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+--------------------------------------
+ChefTest: test_email_should_be_present
+--------------------------------------
+  [1m[36mChef Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = '' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+--------------------------------------------------
+ChefTest: test_chef_should_name_should_be_presence
+--------------------------------------------------
+  [1m[35mChef Exists (0.2ms)[0m  SELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'velpulahari@gmail.com' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+-------------------------------------------------
+ChefTest: test_email_should_be_with_in_the_bounds
+-------------------------------------------------
+  [1m[36mChef Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa@example.com' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+-----------------------------------------------------------
+ChefTest: test_email_validation_shoul_reject_invalid_adress
+-----------------------------------------------------------
+  [1m[36mChef Exists (1.8ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'user@example,com' LIMIT 1[0m
+  [1m[35mChef Exists (0.4ms)[0m  SELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'user_at_email.org' LIMIT 1
+  [1m[36mChef Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'user@name.' LIMIT 1[0m
+  [1m[35mChef Exists (0.3ms)[0m  SELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'eee@i_am.comss' LIMIT 1
+  [1m[36mChef Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'foo@eee+aar.com' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+-------------------------------------
+ChefTest: test_email_should_be_unique
+-------------------------------------
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mChef Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'velpulahari@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO `chefs` (`chefname`, `email`, `created_at`, `updated_at`) VALUES ('hari', 'velpulahari@gmail.com', '2015-09-01 07:51:52.147001', '2015-09-01 07:51:52.147001')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mChef Exists (2.9ms)[0m  SELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'VELPULAHARI@GMAIL.COM' LIMIT 1
+  [1m[36m (1.7ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+---------------------------------------------------
+ChefTest: test_email_validation_accept_valid_adress
+---------------------------------------------------
+  [1m[36mChef Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'user@eee.com' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+-------------------------------------------
+ChefTest: test_chef_should_not_be_too_short
+-------------------------------------------
+  [1m[35mChef Exists (1.0ms)[0m  SELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'velpulahari@gmail.com' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+--------------------------------------------------
+ChefTest: test_chef_should_name_should_be_presence
+--------------------------------------------------
+  [1m[36mChef Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'velpulahari@gmail.com' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+--------------------------------------
+ChefTest: test_email_should_be_present
+--------------------------------------
+  [1m[35mChef Exists (0.4ms)[0m  SELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = '' LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+-------------------------------------------------
+ChefTest: test_email_should_be_with_in_the_bounds
+-------------------------------------------------
+  [1m[36mChef Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa@example.com' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+------------------------------------------
+ChefTest: test_chef_should_not_be_too_long
+------------------------------------------
+  [1m[35mChef Exists (0.3ms)[0m  SELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'velpulahari@gmail.com' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+-------------------------------------
+ChefTest: test__chef_should_be_valid_
+-------------------------------------
+  [1m[36mChef Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'velpulahari@gmail.com' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+------------------------------------------------
+RecipeTest: test_summary_should_not_be_too_short
+------------------------------------------------
+  [1m[35m (3.8ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+----------------------------------------------------
+RecipeTest: test_description_should_not_be_too_short
+----------------------------------------------------
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+--------------------------------------
+RecipeTest: test_name_should_be_vaild_
+--------------------------------------
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+---------------------------------------------------
+RecipeTest: test_description_should_not_be_too_long
+---------------------------------------------------
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+------------------------------------------------
+RecipeTest: test_summary_should_not_be_too_long_
+------------------------------------------------
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+---------------------------------------
+RecipeTest: test_recipe_should_be_valid
+---------------------------------------
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+------------------------------------------
+RecipeTest: test_summary_should_be_present
+------------------------------------------
+  [1m[35m (3.5ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+-----------------------------------------------
+RecipeTest: test_name_should_be_not_be_too_long
+-----------------------------------------------
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+------------------------------------------------
+RecipeTest: test_name_should_be_not_be_too_short
+------------------------------------------------
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+------------------------------------------------
+RecipeTest: test_summary_should_not_be_too_short
+------------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+---------------------------------------
+RecipeTest: test_recipe_should_be_valid
+---------------------------------------
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+----------------------------------------------------
+RecipeTest: test_description_should_not_be_too_short
+----------------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+------------------------------------------------
+RecipeTest: test_summary_should_not_be_too_long_
+------------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+------------------------------------------------
+RecipeTest: test_name_should_be_not_be_too_short
+------------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+---------------------------------------------------
+RecipeTest: test_description_should_not_be_too_long
+---------------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+------------------------------------------
+RecipeTest: test_summary_should_be_present
+------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+--------------------------------------
+RecipeTest: test_name_should_be_vaild_
+--------------------------------------
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+-----------------------------------------------
+RecipeTest: test_name_should_be_not_be_too_long
+-----------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.6ms)[0m  BEGIN
+-------------------------------------
+ChefTest: test__chef_should_be_valid_
+-------------------------------------
+  [1m[36mChef Exists (0.6ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'velpulahari@gmail.com' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+-----------------------------------------------------------
+ChefTest: test_email_validation_shoul_reject_invalid_adress
+-----------------------------------------------------------
+  [1m[35mChef Exists (0.7ms)[0m  SELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'user@example,com' LIMIT 1
+  [1m[36mChef Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'user_at_email.org' LIMIT 1[0m
+  [1m[35mChef Exists (0.5ms)[0m  SELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'user@name.' LIMIT 1
+  [1m[36mChef Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'eee@i_am.comss' LIMIT 1[0m
+  [1m[35mChef Exists (0.4ms)[0m  SELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'foo@eee+aar.com' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+-------------------------------------------------
+ChefTest: test_email_should_be_with_in_the_bounds
+-------------------------------------------------
+  [1m[36mChef Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa@example.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+--------------------------------------------------
+ChefTest: test_chef_should_name_should_be_presence
+--------------------------------------------------
+  [1m[35mChef Exists (0.2ms)[0m  SELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'velpulahari@gmail.com' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+-------------------------------------------
+ChefTest: test_chef_should_not_be_too_short
+-------------------------------------------
+  [1m[36mChef Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'velpulahari@gmail.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+-------------------------------------
+ChefTest: test_email_should_be_unique
+-------------------------------------
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mChef Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'velpulahari@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `chefs` (`chefname`, `email`, `created_at`, `updated_at`) VALUES ('hari', 'velpulahari@gmail.com', '2015-09-01 07:58:54.672580', '2015-09-01 07:58:54.672580')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mChef Exists (0.3ms)[0m  SELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'VELPULAHARI@GMAIL.COM' LIMIT 1
+  [1m[36m (7.6ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+------------------------------------------
+ChefTest: test_chef_should_not_be_too_long
+------------------------------------------
+  [1m[36mChef Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'velpulahari@gmail.com' LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+---------------------------------------------------
+ChefTest: test_email_validation_accept_valid_adress
+---------------------------------------------------
+  [1m[35mChef Exists (0.3ms)[0m  SELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'user@eee.com' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+--------------------------------------
+ChefTest: test_email_should_be_present
+--------------------------------------
+  [1m[36mChef Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = '' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+------------------------------------------
+RecipeTest: test_summary_should_be_present
+------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+----------------------------------------------------
+RecipeTest: test_description_should_not_be_too_short
+----------------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+---------------------------------------
+RecipeTest: test_recipe_should_be_valid
+---------------------------------------
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+------------------------------------------------
+RecipeTest: test_summary_should_not_be_too_long_
+------------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+------------------------------------------------
+RecipeTest: test_name_should_be_not_be_too_short
+------------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+-----------------------------------------------
+RecipeTest: test_name_should_be_not_be_too_long
+-----------------------------------------------
+  [1m[36m (3.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+---------------------------------------------------
+RecipeTest: test_description_should_not_be_too_long
+---------------------------------------------------
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+--------------------------------------
+RecipeTest: test_name_should_be_vaild_
+--------------------------------------
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+------------------------------------------------
+RecipeTest: test_summary_should_not_be_too_short
+------------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+--------------------------------------
+ChefTest: test_email_should_be_present
+--------------------------------------
+  [1m[36mChef Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = '' LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+--------------------------------------------------
+ChefTest: test_chef_should_name_should_be_presence
+--------------------------------------------------
+  [1m[35mChef Exists (0.2ms)[0m  SELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'velpulahari@gmail.com' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+------------------------------------------
+ChefTest: test_chef_should_not_be_too_long
+------------------------------------------
+  [1m[36mChef Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'velpulahari@gmail.com' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+-------------------------------------
+ChefTest: test__chef_should_be_valid_
+-------------------------------------
+  [1m[35mChef Exists (0.2ms)[0m  SELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'velpulahari@gmail.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+-------------------------------------------
+ChefTest: test_chef_should_not_be_too_short
+-------------------------------------------
+  [1m[36mChef Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'velpulahari@gmail.com' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+-------------------------------------
+ChefTest: test_email_should_be_unique
+-------------------------------------
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mChef Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'velpulahari@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO `chefs` (`chefname`, `email`, `created_at`, `updated_at`) VALUES ('hari', 'velpulahari@gmail.com', '2015-09-01 08:00:29.382842', '2015-09-01 08:00:29.382842')
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mChef Exists (0.4ms)[0m  SELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'VELPULAHARI@GMAIL.COM' LIMIT 1
+  [1m[36m (1.8ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+-----------------------------------------------------------
+ChefTest: test_email_validation_shoul_reject_invalid_adress
+-----------------------------------------------------------
+  [1m[36mChef Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'user@example,com' LIMIT 1[0m
+  [1m[35mChef Exists (0.4ms)[0m  SELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'user_at_email.org' LIMIT 1
+  [1m[36mChef Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'user@name.' LIMIT 1[0m
+  [1m[35mChef Exists (1.3ms)[0m  SELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'eee@i_am.comss' LIMIT 1
+  [1m[36mChef Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'foo@eee+aar.com' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+-------------------------------------------------
+ChefTest: test_email_should_be_with_in_the_bounds
+-------------------------------------------------
+  [1m[35mChef Exists (0.6ms)[0m  SELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa@example.com' LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+---------------------------------------------------
+ChefTest: test_email_validation_accept_valid_adress
+---------------------------------------------------
+  [1m[36mChef Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'user@eee.com' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+---------------------------------------------------
+RecipeTest: test_description_should_not_be_too_long
+---------------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+-----------------------------------------------
+RecipeTest: test_name_should_be_not_be_too_long
+-----------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+----------------------------------------------------
+RecipeTest: test_description_should_not_be_too_short
+----------------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+--------------------------------------
+RecipeTest: test_name_should_be_vaild_
+--------------------------------------
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+------------------------------------------
+RecipeTest: test_summary_should_be_present
+------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+------------------------------------------------
+RecipeTest: test_name_should_be_not_be_too_short
+------------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+---------------------------------------
+RecipeTest: test_recipe_should_be_valid
+---------------------------------------
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+------------------------------------------------
+RecipeTest: test_summary_should_not_be_too_long_
+------------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+------------------------------------------------
+RecipeTest: test_summary_should_not_be_too_short
+------------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+-------------------------------------------
+ChefTest: test_chef_should_not_be_too_short
+-------------------------------------------
+  [1m[36mChef Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'velpulahari@gmail.com' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+------------------------------------------
+ChefTest: test_chef_should_not_be_too_long
+------------------------------------------
+  [1m[35mChef Exists (3.1ms)[0m  SELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'velpulahari@gmail.com' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+-------------------------------------
+ChefTest: test_email_should_be_unique
+-------------------------------------
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mChef Exists (0.2ms)[0m  SELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'velpulahari@gmail.com' LIMIT 1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO `chefs` (`chefname`, `email`, `created_at`, `updated_at`) VALUES ('hari', 'velpulahari@gmail.com', '2015-09-01 08:01:21.642407', '2015-09-01 08:01:21.642407')[0m
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mChef Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'VELPULAHARI@GMAIL.COM' LIMIT 1[0m
+  [1m[35m (2.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+---------------------------------------------------
+ChefTest: test_email_validation_accept_valid_adress
+---------------------------------------------------
+  [1m[35mChef Exists (0.3ms)[0m  SELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'user@eee.com' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+-------------------------------------
+ChefTest: test__chef_should_be_valid_
+-------------------------------------
+  [1m[36mChef Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'velpulahari@gmail.com' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+-------------------------------------------------
+ChefTest: test_email_should_be_with_in_the_bounds
+-------------------------------------------------
+  [1m[35mChef Exists (0.4ms)[0m  SELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa@example.com' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+--------------------------------------
+ChefTest: test_email_should_be_present
+--------------------------------------
+  [1m[36mChef Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = '' LIMIT 1[0m
+  [1m[35m (3.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+--------------------------------------------------
+ChefTest: test_chef_should_name_should_be_presence
+--------------------------------------------------
+  [1m[35mChef Exists (0.3ms)[0m  SELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'velpulahari@gmail.com' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+-----------------------------------------------------------
+ChefTest: test_email_validation_shoul_reject_invalid_adress
+-----------------------------------------------------------
+  [1m[36mChef Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'user@example,com' LIMIT 1[0m
+  [1m[35mChef Exists (0.3ms)[0m  SELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'user_at_email.org' LIMIT 1
+  [1m[36mChef Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'user@name.' LIMIT 1[0m
+  [1m[35mChef Exists (0.4ms)[0m  SELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'eee@i_am.comss' LIMIT 1
+  [1m[36mChef Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'foo@eee+aar.com' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+-------------------------------------------
+ChefTest: test_chef_should_not_be_too_short
+-------------------------------------------
+  [1m[36mChef Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'velpulahari@gmail.com' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+-------------------------------------
+ChefTest: test_email_should_be_unique
+-------------------------------------
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mChef Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'velpulahari@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `chefs` (`chefname`, `email`, `created_at`, `updated_at`) VALUES ('hari', 'velpulahari@gmail.com', '2015-09-01 08:01:33.167142', '2015-09-01 08:01:33.167142')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mChef Exists (0.3ms)[0m  SELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'VELPULAHARI@GMAIL.COM' LIMIT 1
+  [1m[36m (2.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+--------------------------------------
+ChefTest: test_email_should_be_present
+--------------------------------------
+  [1m[36mChef Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = '' LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+---------------------------------------------------
+ChefTest: test_email_validation_accept_valid_adress
+---------------------------------------------------
+  [1m[35mChef Exists (0.6ms)[0m  SELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'user@eee.com' LIMIT 1
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.6ms)[0m  BEGIN
+-------------------------------------
+ChefTest: test__chef_should_be_valid_
+-------------------------------------
+  [1m[36mChef Exists (0.7ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'velpulahari@gmail.com' LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+--------------------------------------------------
+ChefTest: test_chef_should_name_should_be_presence
+--------------------------------------------------
+  [1m[35mChef Exists (6.1ms)[0m  SELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'velpulahari@gmail.com' LIMIT 1
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+------------------------------------------
+ChefTest: test_chef_should_not_be_too_long
+------------------------------------------
+  [1m[36mChef Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'velpulahari@gmail.com' LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+-------------------------------------------------
+ChefTest: test_email_should_be_with_in_the_bounds
+-------------------------------------------------
+  [1m[35mChef Exists (0.7ms)[0m  SELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa@example.com' LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+-----------------------------------------------------------
+ChefTest: test_email_validation_shoul_reject_invalid_adress
+-----------------------------------------------------------
+  [1m[36mChef Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'user@example,com' LIMIT 1[0m
+  [1m[35mChef Exists (0.4ms)[0m  SELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'user_at_email.org' LIMIT 1
+  [1m[36mChef Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'user@name.' LIMIT 1[0m
+  [1m[35mChef Exists (0.4ms)[0m  SELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'eee@i_am.comss' LIMIT 1
+  [1m[36mChef Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'foo@eee+aar.com' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+---------------------------------------
+RecipeTest: test_recipe_should_be_valid
+---------------------------------------
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+------------------------------------------
+RecipeTest: test_summary_should_be_present
+------------------------------------------
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+---------------------------------------------------
+RecipeTest: test_description_should_not_be_too_long
+---------------------------------------------------
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+------------------------------------------------
+RecipeTest: test_summary_should_not_be_too_short
+------------------------------------------------
+  [1m[35m (0.9ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+------------------------------------------------
+RecipeTest: test_name_should_be_not_be_too_short
+------------------------------------------------
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+-----------------------------------------------
+RecipeTest: test_name_should_be_not_be_too_long
+-----------------------------------------------
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+----------------------------------------------------
+RecipeTest: test_description_should_not_be_too_short
+----------------------------------------------------
+  [1m[35m (0.4ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+------------------------------------------------
+RecipeTest: test_summary_should_not_be_too_long_
+------------------------------------------------
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+--------------------------------------
+RecipeTest: test_name_should_be_vaild_
+--------------------------------------
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+------------------------------------------
+ChefTest: test_chef_should_not_be_too_long
+------------------------------------------
+  [1m[36mChef Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'velpulahari@gmail.com' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+-------------------------------------------------
+ChefTest: test_email_should_be_with_in_the_bounds
+-------------------------------------------------
+  [1m[35mChef Exists (0.3ms)[0m  SELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa@example.com' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+-------------------------------------
+ChefTest: test__chef_should_be_valid_
+-------------------------------------
+  [1m[36mChef Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'velpulahari@gmail.com' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+-----------------------------------------------------------
+ChefTest: test_email_validation_shoul_reject_invalid_adress
+-----------------------------------------------------------
+  [1m[35mChef Exists (0.2ms)[0m  SELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'user@example,com' LIMIT 1
+  [1m[36mChef Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'user_at_email.org' LIMIT 1[0m
+  [1m[35mChef Exists (0.2ms)[0m  SELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'user@name.' LIMIT 1
+  [1m[36mChef Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'eee@i_am.comss' LIMIT 1[0m
+  [1m[35mChef Exists (0.2ms)[0m  SELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'foo@eee+aar.com' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+-------------------------------------
+ChefTest: test_email_should_be_unique
+-------------------------------------
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mChef Exists (0.2ms)[0m  SELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'velpulahari@gmail.com' LIMIT 1
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO `chefs` (`chefname`, `email`, `created_at`, `updated_at`) VALUES ('hari', 'velpulahari@gmail.com', '2015-09-01 08:04:43.125008', '2015-09-01 08:04:43.125008')[0m
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mChef Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'VELPULAHARI@GMAIL.COM' LIMIT 1[0m
+  [1m[35m (2.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+--------------------------------------------------
+ChefTest: test_chef_should_name_should_be_presence
+--------------------------------------------------
+  [1m[35mChef Exists (0.3ms)[0m  SELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'velpulahari@gmail.com' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+-------------------------------------------
+ChefTest: test_chef_should_not_be_too_short
+-------------------------------------------
+  [1m[36mChef Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'velpulahari@gmail.com' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+--------------------------------------
+ChefTest: test_email_should_be_present
+--------------------------------------
+  [1m[35mChef Exists (3.4ms)[0m  SELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = '' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+---------------------------------------------------
+ChefTest: test_email_validation_accept_valid_adress
+---------------------------------------------------
+  [1m[36mChef Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'user@eee.com' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+-----------------------------------------------
+RecipeTest: test_name_should_be_not_be_too_long
+-----------------------------------------------
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+------------------------------------------------
+RecipeTest: test_summary_should_not_be_too_short
+------------------------------------------------
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+------------------------------------------------
+RecipeTest: test_summary_should_not_be_too_long_
+------------------------------------------------
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+---------------------------------------------------
+RecipeTest: test_description_should_not_be_too_long
+---------------------------------------------------
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+---------------------------------------
+RecipeTest: test_recipe_should_be_valid
+---------------------------------------
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+------------------------------------------
+RecipeTest: test_summary_should_be_present
+------------------------------------------
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+------------------------------------------------
+RecipeTest: test_name_should_be_not_be_too_short
+------------------------------------------------
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+----------------------------------------------------
+RecipeTest: test_description_should_not_be_too_short
+----------------------------------------------------
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+--------------------------------------
+RecipeTest: test_name_should_be_vaild_
+--------------------------------------
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+------------------------------------------
+ChefTest: test_chef_should_not_be_too_long
+------------------------------------------
+  [1m[36mChef Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'velpulahari@gmail.com' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+--------------------------------------------------
+ChefTest: test_chef_should_name_should_be_presence
+--------------------------------------------------
+  [1m[35mChef Exists (0.6ms)[0m  SELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'velpulahari@gmail.com' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+-------------------------------------------
+ChefTest: test_chef_should_not_be_too_short
+-------------------------------------------
+  [1m[36mChef Exists (5.5ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'velpulahari@gmail.com' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+--------------------------------------
+ChefTest: test_email_should_be_present
+--------------------------------------
+  [1m[35mChef Exists (0.2ms)[0m  SELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = '' LIMIT 1
+  [1m[36m (2.7ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+-----------------------------------------------------------
+ChefTest: test_email_validation_shoul_reject_invalid_adress
+-----------------------------------------------------------
+  [1m[36mChef Exists (5.7ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'user@example,com' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+-------------------------------------
+ChefTest: test_email_should_be_unique
+-------------------------------------
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mChef Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'velpulahari@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (8.8ms)[0m  INSERT INTO `chefs` (`email`, `chefname`, `created_at`, `updated_at`) VALUES ('velpulahari@gmail.com', 'hari', '2015-09-01 08:07:32.176608', '2015-09-01 08:07:32.176608')
+  [1m[36m (0.3ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mChef Exists (4.8ms)[0m  SELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'VELPULAHARI@GMAIL.COM' LIMIT 1
+  [1m[36m (1.8ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+---------------------------------------------------
+ChefTest: test_email_validation_accept_valid_adress
+---------------------------------------------------
+  [1m[36mChef Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'user@eee.com' LIMIT 1[0m
+  [1m[35m (0.5ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+-------------------------------------------------
+ChefTest: test_email_should_be_with_in_the_bounds
+-------------------------------------------------
+  [1m[35mChef Exists (0.3ms)[0m  SELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa@example.com' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+-------------------------------------
+ChefTest: test__chef_should_be_valid_
+-------------------------------------
+  [1m[36mChef Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'velpulahari@gmail.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+---------------------------------------
+RecipeTest: test_recipe_should_be_valid
+---------------------------------------
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+------------------------------------------------
+RecipeTest: test_name_should_be_not_be_too_short
+------------------------------------------------
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+----------------------------------------------------
+RecipeTest: test_description_should_not_be_too_short
+----------------------------------------------------
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+--------------------------------------
+RecipeTest: test_name_should_be_vaild_
+--------------------------------------
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+-----------------------------------------------
+RecipeTest: test_name_should_be_not_be_too_long
+-----------------------------------------------
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+------------------------------------------------
+RecipeTest: test_summary_should_not_be_too_short
+------------------------------------------------
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+------------------------------------------------
+RecipeTest: test_summary_should_not_be_too_long_
+------------------------------------------------
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+------------------------------------------
+RecipeTest: test_summary_should_be_present
+------------------------------------------
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+---------------------------------------------------
+RecipeTest: test_description_should_not_be_too_long
+---------------------------------------------------
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+------------------------------------------------
+RecipeTest: test_name_should_be_not_be_too_short
+------------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+-----------------------------------------------
+RecipeTest: test_name_should_be_not_be_too_long
+-----------------------------------------------
+  [1m[36m (5.5ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+------------------------------------------------
+RecipeTest: test_summary_should_not_be_too_long_
+------------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+------------------------------------------
+RecipeTest: test_summary_should_be_present
+------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+---------------------------------------------------
+RecipeTest: test_description_should_not_be_too_long
+---------------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+---------------------------------------
+RecipeTest: test_recipe_should_be_valid
+---------------------------------------
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+--------------------------------------
+RecipeTest: test_name_should_be_vaild_
+--------------------------------------
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+----------------------------------------------------
+RecipeTest: test_description_should_not_be_too_short
+----------------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+------------------------------------------------
+RecipeTest: test_summary_should_not_be_too_short
+------------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+--------------------------------------------------
+ChefTest: test_chef_should_name_should_be_presence
+--------------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+--------------------------------------
+ChefTest: test_email_should_be_present
+--------------------------------------
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+-----------------------------------------------------------
+ChefTest: test_email_validation_shoul_reject_invalid_adress
+-----------------------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+---------------------------------------------------
+ChefTest: test_email_validation_accept_valid_adress
+---------------------------------------------------
+  [1m[36m (0.7ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+-------------------------------------
+ChefTest: test__chef_should_be_valid_
+-------------------------------------
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+-------------------------------------------
+ChefTest: test_chef_should_not_be_too_short
+-------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+------------------------------------------
+ChefTest: test_chef_should_not_be_too_long
+------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+-------------------------------------
+ChefTest: test_email_should_be_unique
+-------------------------------------
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+-------------------------------------------------
+ChefTest: test_email_should_be_with_in_the_bounds
+-------------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+-------------------------------------
+ChefTest: test_email_should_be_unique
+-------------------------------------
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mChef Exists (0.4ms)[0m  SELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'velpulahari@gmail.com' LIMIT 1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO `chefs` (`email`, `chefname`, `created_at`, `updated_at`) VALUES ('velpulahari@gmail.com', 'hari', '2015-09-01 08:09:16.606413', '2015-09-01 08:09:16.606413')[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mChef Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'VELPULAHARI@GMAIL.COM' LIMIT 1[0m
+  [1m[35m (2.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+--------------------------------------
+ChefTest: test_email_should_be_present
+--------------------------------------
+  [1m[35mChef Exists (0.4ms)[0m  SELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = '' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+------------------------------------------
+ChefTest: test_chef_should_not_be_too_long
+------------------------------------------
+  [1m[36mChef Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'velpulahari@gmail.com' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+-------------------------------------------------
+ChefTest: test_email_should_be_with_in_the_bounds
+-------------------------------------------------
+  [1m[35mChef Exists (0.4ms)[0m  SELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa@example.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+-------------------------------------------
+ChefTest: test_chef_should_not_be_too_short
+-------------------------------------------
+  [1m[36mChef Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'velpulahari@gmail.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+--------------------------------------------------
+ChefTest: test_chef_should_name_should_be_presence
+--------------------------------------------------
+  [1m[35mChef Exists (0.2ms)[0m  SELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'velpulahari@gmail.com' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+-------------------------------------
+ChefTest: test__chef_should_be_valid_
+-------------------------------------
+  [1m[36mChef Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'velpulahari@gmail.com' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+---------------------------------------------------
+ChefTest: test_email_validation_accept_valid_adress
+---------------------------------------------------
+  [1m[35mChef Exists (0.3ms)[0m  SELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'user@eee.com' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+-----------------------------------------------------------
+ChefTest: test_email_validation_shoul_reject_invalid_adress
+-----------------------------------------------------------
+  [1m[36mChef Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'user@example,com' LIMIT 1[0m
+  [1m[35mChef Exists (0.3ms)[0m  SELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'user_at_email.org' LIMIT 1
+  [1m[36mChef Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'user@name.' LIMIT 1[0m
+  [1m[35mChef Exists (3.2ms)[0m  SELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'eee@i_am.comss' LIMIT 1
+  [1m[36mChef Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'foo@eee+aar.com' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+---------------------------------------
+RecipeTest: test_recipe_should_be_valid
+---------------------------------------
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+------------------------------------------------
+RecipeTest: test_name_should_be_not_be_too_short
+------------------------------------------------
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+------------------------------------------------
+RecipeTest: test_summary_should_not_be_too_long_
+------------------------------------------------
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+------------------------------------------------
+RecipeTest: test_summary_should_not_be_too_short
+------------------------------------------------
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+----------------------------------------------------
+RecipeTest: test_description_should_not_be_too_short
+----------------------------------------------------
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+------------------------------------------
+RecipeTest: test_summary_should_be_present
+------------------------------------------
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+--------------------------------------
+RecipeTest: test_name_should_be_vaild_
+--------------------------------------
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+-----------------------------------------------
+RecipeTest: test_name_should_be_not_be_too_long
+-----------------------------------------------
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+---------------------------------------------------
+RecipeTest: test_description_should_not_be_too_long
+---------------------------------------------------
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[36m (10.5ms)[0m  [1mDROP DATABASE IF EXISTS `family_test`[0m
+  [1m[35m (4.6ms)[0m  CREATE DATABASE `family_test` DEFAULT CHARACTER SET `utf8` COLLATE `utf8_unicode_ci`
+  [1m[36m (5.6ms)[0m  [1mCREATE TABLE `chefs` (`id` int(11) auto_increment PRIMARY KEY, `chefname` varchar(255), `email` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [1m[35m (5.0ms)[0m  CREATE TABLE `recipes` (`id` int(11) auto_increment PRIMARY KEY, `name` varchar(255), `summary` text, `description` text, `created_at` datetime, `updated_at` datetime, `chef_id` int(11)) ENGINE=InnoDB
+  [1m[36m (5.2ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (72.8ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations`  ON `schema_migrations` (`version`) 
+  [1m[36m (0.7ms)[0m  [1mSELECT version FROM `schema_migrations`[0m
+  [1m[35m (2.1ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20150901081143')
+  [1m[36m (1.4ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20150831103535')[0m
+  [1m[35m (2.4ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20150831104950')
+  [1m[35mActiveRecord::SchemaMigration Load (0.7ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+------------------------------------------
+RecipeTest: test_chef_id_should_be_present
+------------------------------------------
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+----------------------------------------------------
+RecipeTest: test_description_should_not_be_too_short
+----------------------------------------------------
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+--------------------------------------
+RecipeTest: test_name_should_be_vaild_
+--------------------------------------
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+---------------------------------------
+RecipeTest: test_recipe_should_be_valid
+---------------------------------------
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+------------------------------------------------
+RecipeTest: test_name_should_be_not_be_too_short
+------------------------------------------------
+  [1m[35m (0.7ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+------------------------------------------
+RecipeTest: test_summary_should_be_present
+------------------------------------------
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+-----------------------------------------------
+RecipeTest: test_name_should_be_not_be_too_long
+-----------------------------------------------
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+------------------------------------------------
+RecipeTest: test_summary_should_not_be_too_short
+------------------------------------------------
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+------------------------------------------------
+RecipeTest: test_summary_should_not_be_too_long_
+------------------------------------------------
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+---------------------------------------------------
+RecipeTest: test_description_should_not_be_too_long
+---------------------------------------------------
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+-------------------------------------
+ChefTest: test__chef_should_be_valid_
+-------------------------------------
+  [1m[35mChef Exists (0.7ms)[0m  SELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'velpulahari@gmail.com' LIMIT 1
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+-------------------------------------
+ChefTest: test_email_should_be_unique
+-------------------------------------
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mChef Exists (0.3ms)[0m  SELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'velpulahari@gmail.com' LIMIT 1
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO `chefs` (`chefname`, `email`, `created_at`, `updated_at`) VALUES ('hari', 'velpulahari@gmail.com', '2015-09-01 09:21:55.861357', '2015-09-01 09:21:55.861357')[0m
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mChef Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'VELPULAHARI@GMAIL.COM' LIMIT 1[0m
+  [1m[35m (3.3ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+-------------------------------------------
+ChefTest: test_chef_should_not_be_too_short
+-------------------------------------------
+  [1m[35mChef Exists (0.5ms)[0m  SELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'velpulahari@gmail.com' LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+-----------------------------------------------------------
+ChefTest: test_email_validation_shoul_reject_invalid_adress
+-----------------------------------------------------------
+  [1m[36mChef Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'user@example,com' LIMIT 1[0m
+  [1m[35mChef Exists (0.6ms)[0m  SELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'user_at_email.org' LIMIT 1
+  [1m[36mChef Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'user@name.' LIMIT 1[0m
+  [1m[35mChef Exists (0.4ms)[0m  SELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'eee@i_am.comss' LIMIT 1
+  [1m[36mChef Exists (0.7ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'foo@eee+aar.com' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+------------------------------------------
+ChefTest: test_chef_should_not_be_too_long
+------------------------------------------
+  [1m[35mChef Exists (0.3ms)[0m  SELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'velpulahari@gmail.com' LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+---------------------------------------------------
+ChefTest: test_email_validation_accept_valid_adress
+---------------------------------------------------
+  [1m[36mChef Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'user@eee.com' LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+-------------------------------------------------
+ChefTest: test_email_should_be_with_in_the_bounds
+-------------------------------------------------
+  [1m[35mChef Exists (0.6ms)[0m  SELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa@example.com' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+--------------------------------------
+ChefTest: test_email_should_be_present
+--------------------------------------
+  [1m[36mChef Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = '' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+--------------------------------------------------
+ChefTest: test_chef_should_name_should_be_presence
+--------------------------------------------------
+  [1m[35mChef Exists (0.3ms)[0m  SELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'velpulahari@gmail.com' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+----------------------------------------------------
+RecipeTest: test_description_should_not_be_too_short
+----------------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+---------------------------------------------------
+RecipeTest: test_description_should_not_be_too_long
+---------------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+-----------------------------------------------
+RecipeTest: test_name_should_be_not_be_too_long
+-----------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+------------------------------------------
+RecipeTest: test_summary_should_be_present
+------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+---------------------------------------
+RecipeTest: test_recipe_should_be_valid
+---------------------------------------
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+------------------------------------------------
+RecipeTest: test_summary_should_not_be_too_short
+------------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+------------------------------------------------
+RecipeTest: test_name_should_be_not_be_too_short
+------------------------------------------------
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+--------------------------------------
+RecipeTest: test_name_should_be_vaild_
+--------------------------------------
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+------------------------------------------------
+RecipeTest: test_summary_should_not_be_too_long_
+------------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+------------------------------------------
+RecipeTest: test_chef_id_should_be_present
+------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.6ms)[0m  BEGIN
+-------------------------------------
+ChefTest: test__chef_should_be_valid_
+-------------------------------------
+  [1m[36mChef Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'velpulahari@gmail.com' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+------------------------------------------
+ChefTest: test_chef_should_not_be_too_long
+------------------------------------------
+  [1m[35mChef Exists (0.2ms)[0m  SELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'velpulahari@gmail.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+--------------------------------------
+ChefTest: test_email_should_be_present
+--------------------------------------
+  [1m[36mChef Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = '' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+-------------------------------------------------
+ChefTest: test_email_should_be_with_in_the_bounds
+-------------------------------------------------
+  [1m[35mChef Exists (0.3ms)[0m  SELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa@example.com' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+-----------------------------------------------------------
+ChefTest: test_email_validation_shoul_reject_invalid_adress
+-----------------------------------------------------------
+  [1m[36mChef Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'user@example,com' LIMIT 1[0m
+  [1m[35mChef Exists (3.2ms)[0m  SELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'user_at_email.org' LIMIT 1
+  [1m[36mChef Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'user@name.' LIMIT 1[0m
+  [1m[35mChef Exists (0.2ms)[0m  SELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'eee@i_am.comss' LIMIT 1
+  [1m[36mChef Exists (3.6ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'foo@eee+aar.com' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+---------------------------------------------------
+ChefTest: test_email_validation_accept_valid_adress
+---------------------------------------------------
+  [1m[35mChef Exists (0.2ms)[0m  SELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'user@eee.com' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+-------------------------------------
+ChefTest: test_email_should_be_unique
+-------------------------------------
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mChef Exists (0.2ms)[0m  SELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'velpulahari@gmail.com' LIMIT 1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO `chefs` (`chefname`, `email`, `created_at`, `updated_at`) VALUES ('hari', 'velpulahari@gmail.com', '2015-09-01 09:23:50.473493', '2015-09-01 09:23:50.473493')[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mChef Exists (0.6ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'VELPULAHARI@GMAIL.COM' LIMIT 1[0m
+  [1m[35m (2.0ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+--------------------------------------------------
+ChefTest: test_chef_should_name_should_be_presence
+--------------------------------------------------
+  [1m[35mChef Exists (0.3ms)[0m  SELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'velpulahari@gmail.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+-------------------------------------------
+ChefTest: test_chef_should_not_be_too_short
+-------------------------------------------
+  [1m[36mChef Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'velpulahari@gmail.com' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+-----------------------------------------------
+RecipeTest: test_name_should_be_not_be_too_long
+-----------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+------------------------------------------------
+RecipeTest: test_summary_should_not_be_too_long_
+------------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+---------------------------------------
+RecipeTest: test_recipe_should_be_valid
+---------------------------------------
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+------------------------------------------
+RecipeTest: test_summary_should_be_present
+------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+------------------------------------------------
+RecipeTest: test_summary_should_not_be_too_short
+------------------------------------------------
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+------------------------------------------------
+RecipeTest: test_name_should_be_not_be_too_short
+------------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+---------------------------------------------------
+RecipeTest: test_description_should_not_be_too_long
+---------------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+----------------------------------------------------
+RecipeTest: test_description_should_not_be_too_short
+----------------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+------------------------------------------
+RecipeTest: test_chef_id_should_be_present
+------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+--------------------------------------
+RecipeTest: test_name_should_be_vaild_
+--------------------------------------
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+-----------------------------------------------------------
+ChefTest: test_email_validation_shoul_reject_invalid_adress
+-----------------------------------------------------------
+  [1m[36mChef Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'user@example,com' LIMIT 1[0m
+  [1m[35mChef Exists (0.2ms)[0m  SELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'user_at_email.org' LIMIT 1
+  [1m[36mChef Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'user@name.' LIMIT 1[0m
+  [1m[35mChef Exists (0.2ms)[0m  SELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'eee@i_am.comss' LIMIT 1
+  [1m[36mChef Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'foo@eee+aar.com' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+-------------------------------------------------
+ChefTest: test_email_should_be_with_in_the_bounds
+-------------------------------------------------
+  [1m[35mChef Exists (0.2ms)[0m  SELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa@example.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+--------------------------------------
+ChefTest: test_email_should_be_present
+--------------------------------------
+  [1m[36mChef Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = '' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+-------------------------------------
+ChefTest: test__chef_should_be_valid_
+-------------------------------------
+  [1m[35mChef Exists (2.1ms)[0m  SELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'velpulahari@gmail.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+------------------------------------------
+ChefTest: test_chef_should_not_be_too_long
+------------------------------------------
+  [1m[36mChef Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'velpulahari@gmail.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+---------------------------------------------------
+ChefTest: test_email_validation_accept_valid_adress
+---------------------------------------------------
+  [1m[35mChef Exists (0.2ms)[0m  SELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'user@eee.com' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+-------------------------------------------
+ChefTest: test_chef_should_not_be_too_short
+-------------------------------------------
+  [1m[36mChef Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'velpulahari@gmail.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+-------------------------------------
+ChefTest: test_email_should_be_unique
+-------------------------------------
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mChef Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'velpulahari@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `chefs` (`chefname`, `email`, `created_at`, `updated_at`) VALUES ('hari', 'velpulahari@gmail.com', '2015-09-01 09:37:45.954007', '2015-09-01 09:37:45.954007')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mChef Exists (0.2ms)[0m  SELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'VELPULAHARI@GMAIL.COM' LIMIT 1
+  [1m[36m (2.6ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+--------------------------------------------------
+ChefTest: test_chef_should_name_should_be_presence
+--------------------------------------------------
+  [1m[36mChef Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'velpulahari@gmail.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+--------------------------------------
+ChefTest: test_email_should_be_present
+--------------------------------------
+  [1m[36mChef Exists (2.5ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = '' LIMIT 1[0m
+  [1m[35m (4.4ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+------------------------------------------
+ChefTest: test_chef_should_not_be_too_long
+------------------------------------------
+  [1m[35mChef Exists (0.1ms)[0m  SELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'velpulahari@gmail.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+-------------------------------------------------
+ChefTest: test_email_should_be_with_in_the_bounds
+-------------------------------------------------
+  [1m[36mChef Exists (4.7ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa@example.com' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+-------------------------------------
+ChefTest: test_email_should_be_unique
+-------------------------------------
+  [1m[35m (2.4ms)[0m  SAVEPOINT active_record_1
+  [1m[36mChef Exists (1.0ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'velpulahari@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `chefs` (`chefname`, `email`, `created_at`, `updated_at`) VALUES ('hari', 'velpulahari@gmail.com', '2015-09-01 09:39:15.340542', '2015-09-01 09:39:15.340542')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mChef Exists (0.3ms)[0m  SELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'VELPULAHARI@GMAIL.COM' LIMIT 1
+  [1m[36m (5.8ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+-----------------------------------------------------------
+ChefTest: test_email_validation_shoul_reject_invalid_adress
+-----------------------------------------------------------
+  [1m[36mChef Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'user@example,com' LIMIT 1[0m
+  [1m[35mChef Exists (0.4ms)[0m  SELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'user_at_email.org' LIMIT 1
+  [1m[36mChef Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'user@name.' LIMIT 1[0m
+  [1m[35mChef Exists (0.2ms)[0m  SELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'eee@i_am.comss' LIMIT 1
+  [1m[36mChef Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'foo@eee+aar.com' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+-------------------------------------------
+ChefTest: test_chef_should_not_be_too_short
+-------------------------------------------
+  [1m[35mChef Exists (0.2ms)[0m  SELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'velpulahari@gmail.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+---------------------------------------------------
+ChefTest: test_email_validation_accept_valid_adress
+---------------------------------------------------
+  [1m[36mChef Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'user@eee.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+--------------------------------------------------
+ChefTest: test_chef_should_name_should_be_presence
+--------------------------------------------------
+  [1m[35mChef Exists (0.2ms)[0m  SELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'velpulahari@gmail.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+-------------------------------------
+ChefTest: test__chef_should_be_valid_
+-------------------------------------
+  [1m[36mChef Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'velpulahari@gmail.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+------------------------------------------------
+RecipeTest: test_summary_should_not_be_too_short
+------------------------------------------------
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mChef Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'bob@xample.com' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `chefs` (`chefname`, `email`, `created_at`, `updated_at`) VALUES ('bob', 'bob@xample.com', '2015-09-01 09:39:15.380445', '2015-09-01 09:39:15.380445')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.9ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+-----------------------------------------------
+RecipeTest: test_name_should_be_not_be_too_long
+-----------------------------------------------
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mChef Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'bob@xample.com' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `chefs` (`chefname`, `email`, `created_at`, `updated_at`) VALUES ('bob', 'bob@xample.com', '2015-09-01 09:39:15.411909', '2015-09-01 09:39:15.411909')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.6ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+------------------------------------------------
+RecipeTest: test_name_should_be_not_be_too_short
+------------------------------------------------
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mChef Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'bob@xample.com' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `chefs` (`chefname`, `email`, `created_at`, `updated_at`) VALUES ('bob', 'bob@xample.com', '2015-09-01 09:39:15.419850', '2015-09-01 09:39:15.419850')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.6ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+----------------------------------------------------
+RecipeTest: test_description_should_not_be_too_short
+----------------------------------------------------
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mChef Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'bob@xample.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `chefs` (`chefname`, `email`, `created_at`, `updated_at`) VALUES ('bob', 'bob@xample.com', '2015-09-01 09:39:15.429647', '2015-09-01 09:39:15.429647')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (7.7ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+------------------------------------------
+RecipeTest: test_summary_should_be_present
+------------------------------------------
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mChef Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'bob@xample.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `chefs` (`chefname`, `email`, `created_at`, `updated_at`) VALUES ('bob', 'bob@xample.com', '2015-09-01 09:39:15.443674', '2015-09-01 09:39:15.443674')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.6ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+---------------------------------------
+RecipeTest: test_recipe_should_be_valid
+---------------------------------------
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mChef Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'bob@xample.com' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `chefs` (`chefname`, `email`, `created_at`, `updated_at`) VALUES ('bob', 'bob@xample.com', '2015-09-01 09:39:15.452139', '2015-09-01 09:39:15.452139')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (3.3ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+--------------------------------------
+RecipeTest: test_name_should_be_vaild_
+--------------------------------------
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mChef Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'bob@xample.com' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `chefs` (`chefname`, `email`, `created_at`, `updated_at`) VALUES ('bob', 'bob@xample.com', '2015-09-01 09:39:15.461599', '2015-09-01 09:39:15.461599')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.3ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+------------------------------------------
+RecipeTest: test_chef_id_should_be_present
+------------------------------------------
+  [1m[35m (2.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mChef Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'bob@xample.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `chefs` (`chefname`, `email`, `created_at`, `updated_at`) VALUES ('bob', 'bob@xample.com', '2015-09-01 09:39:15.472205', '2015-09-01 09:39:15.472205')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.3ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+------------------------------------------------
+RecipeTest: test_summary_should_not_be_too_long_
+------------------------------------------------
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mChef Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'bob@xample.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `chefs` (`chefname`, `email`, `created_at`, `updated_at`) VALUES ('bob', 'bob@xample.com', '2015-09-01 09:39:15.479739', '2015-09-01 09:39:15.479739')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.5ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+---------------------------------------------------
+RecipeTest: test_description_should_not_be_too_long
+---------------------------------------------------
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mChef Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'bob@xample.com' LIMIT 1[0m
+  [1m[35mSQL (1.3ms)[0m  INSERT INTO `chefs` (`chefname`, `email`, `created_at`, `updated_at`) VALUES ('bob', 'bob@xample.com', '2015-09-01 09:39:15.487734', '2015-09-01 09:39:15.487734')
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.7ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+------------------------------------------
+ChefTest: test_chef_should_not_be_too_long
+------------------------------------------
+  [1m[36mChef Exists (6.0ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'velpulahari@gmail.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+--------------------------------------------------
+ChefTest: test_chef_should_name_should_be_presence
+--------------------------------------------------
+  [1m[35mChef Exists (0.1ms)[0m  SELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'velpulahari@gmail.com' LIMIT 1
+  [1m[36m (5.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+---------------------------------------------------
+ChefTest: test_email_validation_accept_valid_adress
+---------------------------------------------------
+  [1m[36mChef Exists (0.6ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'user@eee.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+-----------------------------------------------------------
+ChefTest: test_email_validation_shoul_reject_invalid_adress
+-----------------------------------------------------------
+  [1m[35mChef Exists (0.2ms)[0m  SELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'user@example,com' LIMIT 1
+  [1m[36mChef Exists (4.4ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'user_at_email.org' LIMIT 1[0m
+  [1m[35mChef Exists (0.2ms)[0m  SELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'user@name.' LIMIT 1
+  [1m[36mChef Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'eee@i_am.comss' LIMIT 1[0m
+  [1m[35mChef Exists (4.5ms)[0m  SELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'foo@eee+aar.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+-------------------------------------
+ChefTest: test_email_should_be_unique
+-------------------------------------
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mChef Exists (0.1ms)[0m  SELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'velpulahari@gmail.com' LIMIT 1
+  [1m[36mSQL (2.2ms)[0m  [1mINSERT INTO `chefs` (`chefname`, `email`, `created_at`, `updated_at`) VALUES ('hari', 'velpulahari@gmail.com', '2015-09-01 09:44:24.036651', '2015-09-01 09:44:24.036651')[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mChef Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'VELPULAHARI@GMAIL.COM' LIMIT 1[0m
+  [1m[35m (3.9ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+--------------------------------------
+ChefTest: test_email_should_be_present
+--------------------------------------
+  [1m[35mChef Exists (0.2ms)[0m  SELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = '' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+-------------------------------------------------
+ChefTest: test_email_should_be_with_in_the_bounds
+-------------------------------------------------
+  [1m[36mChef Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa@example.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+-------------------------------------
+ChefTest: test__chef_should_be_valid_
+-------------------------------------
+  [1m[35mChef Exists (0.2ms)[0m  SELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'velpulahari@gmail.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+-------------------------------------------
+ChefTest: test_chef_should_not_be_too_short
+-------------------------------------------
+  [1m[36mChef Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'velpulahari@gmail.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+------------------------------------------
+RecipeTest: test_chef_id_should_be_present
+------------------------------------------
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mChef Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'bob@xample.com' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `chefs` (`chefname`, `email`, `created_at`, `updated_at`) VALUES ('bob', 'bob@xample.com', '2015-09-01 09:44:24.063452', '2015-09-01 09:44:24.063452')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (2.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+------------------------------------------------
+RecipeTest: test_summary_should_not_be_too_long_
+------------------------------------------------
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mChef Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'bob@xample.com' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `chefs` (`chefname`, `email`, `created_at`, `updated_at`) VALUES ('bob', 'bob@xample.com', '2015-09-01 09:44:24.094033', '2015-09-01 09:44:24.094033')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.4ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+------------------------------------------------
+RecipeTest: test_summary_should_not_be_too_short
+------------------------------------------------
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mChef Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'bob@xample.com' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `chefs` (`chefname`, `email`, `created_at`, `updated_at`) VALUES ('bob', 'bob@xample.com', '2015-09-01 09:44:24.101617', '2015-09-01 09:44:24.101617')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.4ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+---------------------------------------------------
+RecipeTest: test_description_should_not_be_too_long
+---------------------------------------------------
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mChef Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'bob@xample.com' LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `chefs` (`chefname`, `email`, `created_at`, `updated_at`) VALUES ('bob', 'bob@xample.com', '2015-09-01 09:44:24.108574', '2015-09-01 09:44:24.108574')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.5ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+----------------------------------------------------
+RecipeTest: test_description_should_not_be_too_short
+----------------------------------------------------
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mChef Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'bob@xample.com' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `chefs` (`chefname`, `email`, `created_at`, `updated_at`) VALUES ('bob', 'bob@xample.com', '2015-09-01 09:44:24.118598', '2015-09-01 09:44:24.118598')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.4ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+--------------------------------------
+RecipeTest: test_name_should_be_vaild_
+--------------------------------------
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mChef Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'bob@xample.com' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `chefs` (`chefname`, `email`, `created_at`, `updated_at`) VALUES ('bob', 'bob@xample.com', '2015-09-01 09:44:24.125736', '2015-09-01 09:44:24.125736')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.8ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+------------------------------------------------
+RecipeTest: test_name_should_be_not_be_too_short
+------------------------------------------------
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mChef Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'bob@xample.com' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `chefs` (`chefname`, `email`, `created_at`, `updated_at`) VALUES ('bob', 'bob@xample.com', '2015-09-01 09:44:24.134113', '2015-09-01 09:44:24.134113')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (5.4ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+------------------------------------------
+RecipeTest: test_summary_should_be_present
+------------------------------------------
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mChef Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'bob@xample.com' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `chefs` (`chefname`, `email`, `created_at`, `updated_at`) VALUES ('bob', 'bob@xample.com', '2015-09-01 09:44:24.146252', '2015-09-01 09:44:24.146252')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.6ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+---------------------------------------
+RecipeTest: test_recipe_should_be_valid
+---------------------------------------
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mChef Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'bob@xample.com' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `chefs` (`chefname`, `email`, `created_at`, `updated_at`) VALUES ('bob', 'bob@xample.com', '2015-09-01 09:44:24.154544', '2015-09-01 09:44:24.154544')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+-----------------------------------------------
+RecipeTest: test_name_should_be_not_be_too_long
+-----------------------------------------------
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mChef Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'bob@xample.com' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `chefs` (`chefname`, `email`, `created_at`, `updated_at`) VALUES ('bob', 'bob@xample.com', '2015-09-01 09:44:24.161246', '2015-09-01 09:44:24.161246')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.2ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+-------------------------------------
+ChefTest: test__chef_should_be_valid_
+-------------------------------------
+  [1m[36mChef Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'velpulahari@gmail.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+-------------------------------------
+ChefTest: test_email_should_be_unique
+-------------------------------------
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mChef Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'velpulahari@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `chefs` (`chefname`, `email`, `created_at`, `updated_at`) VALUES ('hari', 'velpulahari@gmail.com', '2015-09-01 09:44:48.300111', '2015-09-01 09:44:48.300111')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mChef Exists (0.2ms)[0m  SELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'VELPULAHARI@GMAIL.COM' LIMIT 1
+  [1m[36m (19.6ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+-------------------------------------------------
+ChefTest: test_email_should_be_with_in_the_bounds
+-------------------------------------------------
+  [1m[36mChef Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa@example.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+---------------------------------------------------
+ChefTest: test_email_validation_accept_valid_adress
+---------------------------------------------------
+  [1m[35mChef Exists (0.2ms)[0m  SELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'user@eee.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+--------------------------------------------------
+ChefTest: test_chef_should_name_should_be_presence
+--------------------------------------------------
+  [1m[36mChef Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'velpulahari@gmail.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+-------------------------------------------
+ChefTest: test_chef_should_not_be_too_short
+-------------------------------------------
+  [1m[35mChef Exists (0.2ms)[0m  SELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'velpulahari@gmail.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+--------------------------------------
+ChefTest: test_email_should_be_present
+--------------------------------------
+  [1m[36mChef Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = '' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+------------------------------------------
+ChefTest: test_chef_should_not_be_too_long
+------------------------------------------
+  [1m[35mChef Exists (0.5ms)[0m  SELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'velpulahari@gmail.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+-----------------------------------------------------------
+ChefTest: test_email_validation_shoul_reject_invalid_adress
+-----------------------------------------------------------
+  [1m[36mChef Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'user@example,com' LIMIT 1[0m
+  [1m[35mChef Exists (0.2ms)[0m  SELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'user_at_email.org' LIMIT 1
+  [1m[36mChef Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'user@name.' LIMIT 1[0m
+  [1m[35mChef Exists (0.2ms)[0m  SELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'eee@i_am.comss' LIMIT 1
+  [1m[36mChef Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'foo@eee+aar.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+--------------------------------------
+RecipeTest: test_name_should_be_vaild_
+--------------------------------------
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mChef Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'bob@xample.com' LIMIT 1[0m
+  [1m[35mSQL (2.3ms)[0m  INSERT INTO `chefs` (`chefname`, `email`, `created_at`, `updated_at`) VALUES ('bob', 'bob@xample.com', '2015-09-01 09:44:48.363916', '2015-09-01 09:44:48.363916')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.7ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+---------------------------------------
+RecipeTest: test_recipe_should_be_valid
+---------------------------------------
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mChef Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'bob@xample.com' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `chefs` (`chefname`, `email`, `created_at`, `updated_at`) VALUES ('bob', 'bob@xample.com', '2015-09-01 09:44:48.393770', '2015-09-01 09:44:48.393770')
+  [1m[36m (2.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+----------------------------------------------------
+RecipeTest: test_description_should_not_be_too_short
+----------------------------------------------------
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mChef Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'bob@xample.com' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `chefs` (`chefname`, `email`, `created_at`, `updated_at`) VALUES ('bob', 'bob@xample.com', '2015-09-01 09:44:48.402642', '2015-09-01 09:44:48.402642')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+-----------------------------------------------
+RecipeTest: test_name_should_be_not_be_too_long
+-----------------------------------------------
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mChef Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'bob@xample.com' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `chefs` (`chefname`, `email`, `created_at`, `updated_at`) VALUES ('bob', 'bob@xample.com', '2015-09-01 09:44:48.409536', '2015-09-01 09:44:48.409536')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.5ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+------------------------------------------
+RecipeTest: test_chef_id_should_be_present
+------------------------------------------
+  [1m[35m (0.4ms)[0m  SAVEPOINT active_record_1
+  [1m[36mChef Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'bob@xample.com' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `chefs` (`chefname`, `email`, `created_at`, `updated_at`) VALUES ('bob', 'bob@xample.com', '2015-09-01 09:44:48.419109', '2015-09-01 09:44:48.419109')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+------------------------------------------------
+RecipeTest: test_summary_should_not_be_too_long_
+------------------------------------------------
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mChef Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'bob@xample.com' LIMIT 1[0m
+  [1m[35mSQL (2.4ms)[0m  INSERT INTO `chefs` (`chefname`, `email`, `created_at`, `updated_at`) VALUES ('bob', 'bob@xample.com', '2015-09-01 09:44:48.425813', '2015-09-01 09:44:48.425813')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+---------------------------------------------------
+RecipeTest: test_description_should_not_be_too_long
+---------------------------------------------------
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mChef Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'bob@xample.com' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `chefs` (`chefname`, `email`, `created_at`, `updated_at`) VALUES ('bob', 'bob@xample.com', '2015-09-01 09:44:48.435401', '2015-09-01 09:44:48.435401')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.4ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+------------------------------------------------
+RecipeTest: test_summary_should_not_be_too_short
+------------------------------------------------
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mChef Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'bob@xample.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `chefs` (`chefname`, `email`, `created_at`, `updated_at`) VALUES ('bob', 'bob@xample.com', '2015-09-01 09:44:48.442904', '2015-09-01 09:44:48.442904')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.5ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+------------------------------------------
+RecipeTest: test_summary_should_be_present
+------------------------------------------
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mChef Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'bob@xample.com' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `chefs` (`chefname`, `email`, `created_at`, `updated_at`) VALUES ('bob', 'bob@xample.com', '2015-09-01 09:44:48.450432', '2015-09-01 09:44:48.450432')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.7ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+------------------------------------------------
+RecipeTest: test_name_should_be_not_be_too_short
+------------------------------------------------
+  [1m[35m (2.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mChef Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'bob@xample.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `chefs` (`chefname`, `email`, `created_at`, `updated_at`) VALUES ('bob', 'bob@xample.com', '2015-09-01 09:44:48.460804', '2015-09-01 09:44:48.460804')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.6ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+--------------------------------------
+ChefTest: test_email_should_be_present
+--------------------------------------
+  [1m[36mChef Exists (6.5ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = '' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+------------------------------------------
+ChefTest: test_chef_should_not_be_too_long
+------------------------------------------
+  [1m[35mChef Exists (0.2ms)[0m  SELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'velpulahari@gmail.com' LIMIT 1
+  [1m[36m (0.6ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+-------------------------------------
+ChefTest: test__chef_should_be_valid_
+-------------------------------------
+  [1m[36mChef Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'velpulahari@gmail.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+-----------------------------------------------------------
+ChefTest: test_email_validation_shoul_reject_invalid_adress
+-----------------------------------------------------------
+  [1m[35mChef Exists (0.2ms)[0m  SELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'user@example,com' LIMIT 1
+  [1m[36mChef Exists (4.5ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'user_at_email.org' LIMIT 1[0m
+  [1m[35mChef Exists (0.3ms)[0m  SELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'user@name.' LIMIT 1
+  [1m[36mChef Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'eee@i_am.comss' LIMIT 1[0m
+  [1m[35mChef Exists (4.5ms)[0m  SELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'foo@eee+aar.com' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+-------------------------------------------------
+ChefTest: test_email_should_be_with_in_the_bounds
+-------------------------------------------------
+  [1m[36mChef Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa@example.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+-------------------------------------
+ChefTest: test_email_should_be_unique
+-------------------------------------
+  [1m[35m (2.4ms)[0m  SAVEPOINT active_record_1
+  [1m[36mChef Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'velpulahari@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `chefs` (`chefname`, `email`, `created_at`, `updated_at`) VALUES ('hari', 'velpulahari@gmail.com', '2015-09-01 09:46:47.290585', '2015-09-01 09:46:47.290585')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mChef Exists (0.2ms)[0m  SELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'VELPULAHARI@GMAIL.COM' LIMIT 1
+  [1m[36m (22.9ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+--------------------------------------------------
+ChefTest: test_chef_should_name_should_be_presence
+--------------------------------------------------
+  [1m[36mChef Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'velpulahari@gmail.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+-------------------------------------------
+ChefTest: test_chef_should_not_be_too_short
+-------------------------------------------
+  [1m[35mChef Exists (0.1ms)[0m  SELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'velpulahari@gmail.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+---------------------------------------------------
+ChefTest: test_email_validation_accept_valid_adress
+---------------------------------------------------
+  [1m[36mChef Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'user@eee.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+------------------------------------------------
+RecipeTest: test_summary_should_not_be_too_long_
+------------------------------------------------
+  [1m[35m (0.3ms)[0m  SAVEPOINT active_record_1
+  [1m[36mChef Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'bob@xample.com' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `chefs` (`chefname`, `email`, `created_at`, `updated_at`) VALUES ('bob', 'bob@xample.com', '2015-09-01 09:46:47.330274', '2015-09-01 09:46:47.330274')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.5ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+---------------------------------------------------
+RecipeTest: test_description_should_not_be_too_long
+---------------------------------------------------
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mChef Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'bob@xample.com' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `chefs` (`chefname`, `email`, `created_at`, `updated_at`) VALUES ('bob', 'bob@xample.com', '2015-09-01 09:46:47.359683', '2015-09-01 09:46:47.359683')
+  [1m[36m (0.3ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (2.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+------------------------------------------------
+RecipeTest: test_summary_should_not_be_too_short
+------------------------------------------------
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mChef Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'bob@xample.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `chefs` (`chefname`, `email`, `created_at`, `updated_at`) VALUES ('bob', 'bob@xample.com', '2015-09-01 09:46:47.370218', '2015-09-01 09:46:47.370218')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (3.9ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+------------------------------------------
+RecipeTest: test_chef_id_should_be_present
+------------------------------------------
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mChef Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'bob@xample.com' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `chefs` (`chefname`, `email`, `created_at`, `updated_at`) VALUES ('bob', 'bob@xample.com', '2015-09-01 09:46:47.380223', '2015-09-01 09:46:47.380223')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (2.0ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+------------------------------------------
+RecipeTest: test_summary_should_be_present
+------------------------------------------
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mChef Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'bob@xample.com' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `chefs` (`chefname`, `email`, `created_at`, `updated_at`) VALUES ('bob', 'bob@xample.com', '2015-09-01 09:46:47.388164', '2015-09-01 09:46:47.388164')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.6ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+---------------------------------------
+RecipeTest: test_recipe_should_be_valid
+---------------------------------------
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mChef Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'bob@xample.com' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `chefs` (`chefname`, `email`, `created_at`, `updated_at`) VALUES ('bob', 'bob@xample.com', '2015-09-01 09:46:47.395748', '2015-09-01 09:46:47.395748')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.4ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+-----------------------------------------------
+RecipeTest: test_name_should_be_not_be_too_long
+-----------------------------------------------
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mChef Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'bob@xample.com' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `chefs` (`chefname`, `email`, `created_at`, `updated_at`) VALUES ('bob', 'bob@xample.com', '2015-09-01 09:46:47.402943', '2015-09-01 09:46:47.402943')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (4.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+--------------------------------------
+RecipeTest: test_name_should_be_vaild_
+--------------------------------------
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mChef Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'bob@xample.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `chefs` (`chefname`, `email`, `created_at`, `updated_at`) VALUES ('bob', 'bob@xample.com', '2015-09-01 09:46:47.413624', '2015-09-01 09:46:47.413624')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.5ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+------------------------------------------------
+RecipeTest: test_name_should_be_not_be_too_short
+------------------------------------------------
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mChef Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'bob@xample.com' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `chefs` (`chefname`, `email`, `created_at`, `updated_at`) VALUES ('bob', 'bob@xample.com', '2015-09-01 09:46:47.421497', '2015-09-01 09:46:47.421497')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.9ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+----------------------------------------------------
+RecipeTest: test_description_should_not_be_too_short
+----------------------------------------------------
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mChef Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `chefs` WHERE `chefs`.`email` = 'bob@xample.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `chefs` (`chefname`, `email`, `created_at`, `updated_at`) VALUES ('bob', 'bob@xample.com', '2015-09-01 09:46:47.429517', '2015-09-01 09:46:47.429517')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.9ms)[0m  ROLLBACK

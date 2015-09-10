@@ -1,0 +1,33 @@
+<%= render 'shared/error', obj: @recipe %>
+
+<div class = "row">
+<div class = "well col-md-8 col-md-offset-2">
+
+<%= form_for( @recipe,html: {multipart:true} ) do |f| %>
+<%= f.label :name %>
+<%= f.text_field :name %>
+
+<%= f.label :summary %>
+<%= f.text_field :summary %>
+
+<%= f.label :description %>
+<%= f.text_area :description %>
+
+<span class ="picture">
+<%= f.file_field :picture, accept: "image/jpeg, image/png, image/gif" %>
+</span>
+
+<%= f.submit(@recipe.new_record? ? 'create Recipes' : 'Edit Recipes' ,class: "btn btn-success") %>
+<% end %>
+
+</div>
+
+</div>
+<script type  ="text/javascript">
+$('#recipe_picture').bind('change',function() {
+	size_in_megabytes = this.file[0].size/1024/1024;
+	if (size_in_megabytes > 5) {
+		alert('maximum file size 5megabytes');
+	}
+})
+</script>
